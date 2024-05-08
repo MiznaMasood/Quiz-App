@@ -1,0 +1,34 @@
+*{
+    background-color: plum;
+   
+}
+
+#timer{
+    background-color: #FF6347;
+    color: #FFFFFF;
+}
+
+h1{
+color: red;
+}
+
+#ques{
+    background-color:#87CEFA ;
+    border: #FF6347;
+    padding: 50px;
+}
+
+#opt1{
+    color: black
+}
+#opt2{
+    color: black
+}
+#opt3{
+    color: black
+}
+
+#btn{
+    background-color: #008000;
+    color: black;
+}
