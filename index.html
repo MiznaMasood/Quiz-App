@@ -3,52 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
 </head>
-<body onload="nextQuestion()">
-    <div style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
-         
+<body onload="initializeQuiz()">
+    <div class="container">
         <h2 id="timer">2:00</h2>
-
-
         <h1>Quiz App</h1>
-
-        <p id="ques"> </p>
-
-        <input onclick="target()"  name="option" type="radio" value="1">
-        <label id="opt1"></label>
-          <br>
-          <br>
-
-        <input onclick="target()"  name="option" type="radio" value="2">
-        <label id="opt2"></label>
-          
-        <br>
-        <br>
-
-       
-        <input onclick="target()"  name="option" type="radio" value="3">
-        <label id="opt3"></label>
-       
-        <br>
-        <br>
-
-        <button id="btn" disabled onclick="nextQuestion()">Next</button>
-
-       
-
-
-
-
-
-
-
+        <p id="ques"></p>
+        <div class="options">
+            <input onclick="enableNextButton()" name="option" type="radio" value="1">
+            <label id="opt1"></label>
+            <br>
+            <input onclick="enableNextButton()" name="option" type="radio" value="2">
+            <label id="opt2"></label>
+            <br>
+            <input onclick="enableNextButton()" name="option" type="radio" value="3">
+            <label id="opt3"></label>
+        </div>
+        <button id="btn" disabled>Next</button>
     </div>
 
-
-
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
 </body>
 </html>
+
+
+
